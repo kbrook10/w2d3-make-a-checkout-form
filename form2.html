@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Form Challenge</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheets go here. -->
+  <script src="https://use.fontawesome.com/bfd4e076b7.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" type="text/css" href="form2/global.css" />
+</head>
+<body>
+  <form action="https://formspree.io/kbrook10@gmail.com" method="GET">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label>
+              <input type="hidden" name="checkbox" value="no">
+              <input type="checkbox" id="checkbox" name="optin" value="yes" checked="checked">
+              I'm feeling lucky
+          </label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group text-right">
+            <button class="btn btn-success btn-md">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
